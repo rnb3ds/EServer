@@ -8,6 +8,7 @@ files:
   - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
   - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
   - '!extra/*'
+  - '!screenshots/*'
 mac:
   target:
     - target: dmg
@@ -34,6 +35,7 @@ win:
     - target: zip
       arch:
         - x64
+        - arm64
     - target: nsis
       arch:
         - x64
